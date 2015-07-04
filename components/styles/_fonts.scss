@@ -1,0 +1,67 @@
+$url: '/styles/fonts/LinLibertine_';
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'R-webfont.eot');
+    src: url($url+'R-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'R-webfont.woff2') format('woff2'),
+         url($url+'R-webfont.woff') format('woff'),
+         url($url+'R-webfont.ttf') format('truetype'),
+         url($url+'R-webfont.svg#linux_libertine') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'RI-webfont.eot');
+    src: url($url+'RI-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'RI-webfont.woff2') format('woff2'),
+         url($url+'RI-webfont.woff') format('woff'),
+         url($url+'RI-webfont.ttf') format('truetype'),
+         url($url+'RI-webfont.svg#linux_libertine') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'RZ-webfont.eot');
+    src: url($url+'RZ-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'RZ-webfont.woff2') format('woff2'),
+         url($url+'RZ-webfont.woff') format('woff'),
+         url($url+'RZ-webfont.ttf') format('truetype'),
+         url($url+'RZ-webfont.svg#linux_libertine') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'RZI-webfont.eot');
+    src: url($url+'RZI-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'RZI-webfont.woff2') format('woff2'),
+         url($url+'RZI-webfont.woff') format('woff'),
+         url($url+'RZI-webfont.ttf') format('truetype'),
+         url($url+'RZI-webfont.svg#linux_libertine') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'RB-webfont.eot');
+    src: url($url+'RB-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'RB-webfont.woff2') format('woff2'),
+         url($url+'RB-webfont.woff') format('woff'),
+         url($url+'RB-webfont.ttf') format('truetype'),
+         url($url+'RB-webfont.svg#linux_libertine') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'linux libertine';
+    src: url($url+'RBI-webfont.eot');
+    src: url($url+'RBI-webfont.eot?#iefix') format('embedded-opentype'),
+         url($url+'RBI-webfont.woff2') format('woff2'),
+         url($url+'RBI-webfont.woff') format('woff'),
+         url($url+'RBI-webfont.ttf') format('truetype'),
+         url($url+'RBI-webfont.svg#linux_libertine') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}

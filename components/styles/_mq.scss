@@ -1,0 +1,190 @@
+@media screen and (max-width: 750px) {
+   #home .body-header .encap {
+    padding-left: 20px;
+  }
+  .body-header  {
+    .main-menu {
+      float: none;
+      margin-top: 20px;
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .blurheader {
+    height: 111px;
+  }
+  blockquote {
+    position: static;
+    left: initial;
+    padding-left: initial;
+    width: initial;
+  }
+  .no-shapes blockquote {
+    border-left: none;
+  }
+  .shapes blockquote:before {
+    display: none;
+  }
+  .hero {
+    min-height: 450px;
+  }
+  #map-canvas {
+    margin-left: none;
+  }
+  .footer-about {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  div[role=main] .encap.options {
+    padding-left: 0;
+    position: static;
+  }
+  .options-list {
+    padding: 20px 0 10px;
+    position: static;
+    width: 100%;
+    li {
+      padding-left: 20px;
+    }
+  }
+  #map-canvas {
+    position: absolute !important;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: initial;
+  }
+  #contato {
+    overflow-y: 0;
+    .navigation{
+      margin-top: 350px; 
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  %spriteMQ {
+    background: url(images/sprites.png) 0 0 no-repeat;
+  }
+  .body-header {
+    padding: 40px 0 0;
+    .logo {
+      text-align: center;
+      a {
+        margin: auto;
+      }
+    }
+  }
+  .blurheader {
+    height: 115px;
+  }
+  .main-menu {
+    display: block;
+    font-size: 1.2em;
+    height: 200px;
+    li {
+      text-align: center;
+      display: block;
+      padding-bottom: 8px !important;
+      &,
+      &first-child {
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+    .selected {
+      border-bottom: none;
+    }
+  }
+  .main-menu-btn {
+    @extend %spriteMQ;
+    background-position: 0 -42px;
+    display: block;
+    margin: 15px auto;
+    height: 27px;
+    width: 45px;
+  }
+  #main-menu-encap {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    &.show {
+      -webkit-animation: open_menu .5s cubic-bezier(.6,.2,.4,.8);
+         -moz-animation: open_menu .5s cubic-bezier(.6,.2,.4,.8);
+           -o-animation: open_menu .5s cubic-bezier(.6,.2,.4,.8);
+              animation: open_menu .5s cubic-bezier(.6,.2,.4,.8);
+      height: 238px;
+    }
+    &.hide {
+      -webkit-animation: close_menu .5s cubic-bezier(.6,.2,.4,.8);
+         -moz-animation: close_menu .5s cubic-bezier(.6,.2,.4,.8);
+           -o-animation: close_menu .5s cubic-bezier(.6,.2,.4,.8);
+              animation: close_menu .5s cubic-bezier(.6,.2,.4,.8);
+      height: 0;
+    }
+  }
+  @-webkit-keyframes open_menu { from { height: 0; } to { height: 238px; }  }
+     @-moz-keyframes open_menu { from { height: 0; } to { height: 238px; }  }
+       @-o-keyframes open_menu { from { height: 0; } to { height: 238px; }  }
+          @keyframes open_menu { from { height: 0; } to { height: 238px; }  }
+          
+  @-webkit-keyframes close_menu { from { height: 238px; } to { height: 0; }  }
+     @-moz-keyframes close_menu { from { height: 238px; } to { height: 0; }  }
+       @-o-keyframes close_menu { from { height: 238px; } to { height: 0; }  }
+          @keyframes close_menu { from { height: 238px; } to { height: 0; }  }
+  .blurheader {
+    &.show {
+      height: 353px;
+      -webkit-animation: open_blur .5s cubic-bezier(.6,.2,.4,.8);
+         -moz-animation: open_blur .5s cubic-bezier(.6,.2,.4,.8);
+           -o-animation: open_blur .5s cubic-bezier(.6,.2,.4,.8);
+              animation: open_blur .5s cubic-bezier(.6,.2,.4,.8);
+    }
+    &.hide {
+      -webkit-animation: close_blur .5s cubic-bezier(.6,.2,.4,.8);
+         -moz-animation: close_blur .5s cubic-bezier(.6,.2,.4,.8);
+           -o-animation: close_blur .5s cubic-bezier(.6,.2,.4,.8);
+              animation: close_blur .5s cubic-bezier(.6,.2,.4,.8);
+    }
+  }
+  @-webkit-keyframes open_blur { from { height: 115px; } to { height: 353px; }  }
+     @-moz-keyframes open_blur { from { height: 115px; } to { height: 353px; }  }
+       @-o-keyframes open_blur { from { height: 115px; } to { height: 353px; }  }
+          @keyframes open_blur { from { height: 115px; } to { height: 353px; }  }
+          
+  @-webkit-keyframes close_blur { from { height: 353px; } to { height: 115px; }  }
+     @-moz-keyframes close_blur { from { height: 353px; } to { height: 115px; }  }
+       @-o-keyframes close_blur { from { height: 353px; } to { height: 115px; }  }
+          @keyframes close_blur { from { height: 353px; } to { height: 115px; }  }
+  
+  .hero {
+    min-height: 350px;
+  }
+  .body-footer {
+    padding-bottom: 2em;
+    .footer-logo {
+      float: left;
+    }
+    .footer-about,
+    .footer-logo {
+      display: block;
+    }
+    .site-map {
+      display: none;
+    }
+    .logo {
+      @extend %spriteMQ;
+      background-position: -130px center;
+      background-size: 210px 45px;
+      height: 120px;
+      width: 80px;
+    }
+    .colofon {
+      padding-left: 110px;
+    }
+  }
+}

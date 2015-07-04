@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Designer, back-end developer: Tiago Ferreira
+  Site: http://tiagoferreira.me
+  Location: Brasília, Brazil.
+  
+  Front-end developer: Fernando Lira.
+  Site: http://fernando.lira.etc.br
+  Location: Brasília, Brazil.
+
+# TECHNOLOGY COLOPHON
+
+  Standards: HTML5, CSS3, ECMAScript, PHP
+  Components: Gulp, jQuery, Normalize.css, Sass + Compass, Wordpress
+  CMS: WordPress
+  IDE: Cloud 9 @ c9.io

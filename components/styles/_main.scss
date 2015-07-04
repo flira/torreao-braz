@@ -1,0 +1,215 @@
+div[role=main] {
+  @extend %text-left;
+  background: $body-color;
+  padding: 0 0 75px;
+  border-top: 1px solid $gray;
+  .encap {
+    max-width: 540px;
+    padding-left: 40px;
+  }
+  .encap.options {
+    max-width: 600px;
+    padding: 0;
+    padding-left: 240px;
+    position: relative;
+  }
+}
+
+[class$=content] {
+  max-width: 540px;
+  padding: 0 20px;
+}
+.options-list {
+  @extend %absolute;
+  background: $light-gray;
+  left: 0;
+  list-style: none!important;
+  padding: 20px 10px;
+  width: 220px;
+  a {
+      @extend %menu-anchor;
+  }
+  li {
+    font-size: $size14;
+    margin-bottom: .75em!important;
+  }
+  .selected {
+    color: $orange;
+  }
+}
+.options-content {
+  min-height: 300px;
+   div {
+     @extend %no-display;
+   }
+   .selected {
+     @extend %block;
+   }
+   li {
+     @extend %semi-bold;
+   }
+}
+
+/*
+  Heros
+_________________________________________________________
+*/
+.hero {
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 20px;
+  min-height: 550px;
+  border-bottom: 1px solid #dbdbdc;
+}
+
+#home .hero {
+    background-image: url(images/home_1600.jpg);
+}
+#atuacao .hero {
+    background-image: url(images/atuacao_1600.jpg);
+}
+#contato .hero {
+    background-image: url(images/contato_1600.jpg);
+}
+#escritorio .hero {
+    background-image: url(images/escritorio_1600.jpg);
+}
+#profissionais .hero {
+    background-image: url(images/profissionais_1600.jpg);
+}
+/*
+  Home
+_________________________________________________________
+*/
+#home {
+  overflow: hidden;
+  .main-menu li {
+    padding-bottom: 3px;
+  }
+  .body-footer {
+    @extend %fixed;
+    bottom:0;
+  }
+}
+
+/*
+  Profissionais
+_________________________________________________________
+*/
+.accordion {
+  .cv {
+  color: $type-color;
+  cursor: pointer;
+  &:hover {
+      text-decoration: underline;
+    }
+  &:after {
+      @extend %inline-block;
+      @extend %sprite;
+      content:'';
+      background-position: -70px -42px;
+      margin-left: .3125em;
+      width: 9px;
+      height: 12px;
+      vertical-align: baseline;
+    }
+  }
+  div {
+    @extend %block;
+    height: 0;
+    overflow: hidden;
+  }
+  h3 {
+    @extend %bold;
+  }
+  .show,
+  .content {
+    height: auto;
+  }
+  .content {
+    border-left: 2px solid $orange;
+    color: #7a7c80;
+    margin: .5em 0 1em;
+    padding-left: 2.5%;
+    padding-right: 0;
+    width: 97.5%;
+    width: calc(97.5% - 2px);
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .email,
+  .since {
+    color: #7a7c80;
+  }
+  .email {
+    @extend %block;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/*
+  Contato
+_________________________________________________________
+*/
+#contato {
+  #main .encap {
+    padding: 0 20px;
+  }
+}
+.cs-form {
+  overflow-x: hidden;
+  padding-bottom: 1.8em;
+  label {
+    @extend %font2;
+    @extend %bold;
+  }
+  [type=button] {
+    @extend %emphasis;
+    @extend %full-width;
+    background: $gray;
+    border: none;
+    font-size: 1.1em;
+    height: 43px;
+  }
+  
+  textarea {
+    height: 210px;
+    resize: none;
+  }
+  [type=text],
+  textarea {
+    background: #fff;
+    border: 1px solid $light-gray;
+    border-bottom: 2px solid $gray;
+    font-family: $font1;
+    font-size: 1em;
+    margin: .3em 0 .9em;
+    padding: 2% 2% 1%;
+    width: 96%; //fallback for browsers without support for calc()
+    width: calc(96%-2px);
+  }
+  input,
+  textarea {
+    color: $type-color;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#map-canvas {
+  width: 640px;
+  min-width: 640px;
+  height: 300px;
+  margin-bottom: 30px;
+  margin-left: -100px;
+  img,
+  div {
+    max-width: none;
+    max-height: none;
+  }
+}

@@ -1,0 +1,76 @@
+.body-header {
+  border-bottom: 1px solid $gray;
+  padding: 45px 0 0;
+  top: 0;
+  z-index: 10000000000;
+  a {
+    @extend %menu-anchor;
+    font-size: $size13;
+  }
+  .logo {
+    margin: -15px 0 2px;
+    a {
+      @extend %block;
+      @extend %sprite;
+      height: 32px;
+      width: 140px;
+    }
+  }
+}
+.body-header,
+.blurheader { 
+  @extend %full-width;
+  @extend %box-shadow;
+  @extend %fixed;
+  background: rgba(255,255,255,.9);
+  top: 0;
+}
+.blurheader {
+  height: 78px;
+  background: transparent;
+  overflow: hidden;
+  z-index: 10000;
+}
+#canvas {
+  opacity: 0;
+
+}
+.blurred ~ .blurheader #canvas {
+  opacity: 1;
+  -webkit-animation: fade_in_blur .5s cubic-bezier(.6,.2,.4,.8);
+     -moz-animation: fade_in_blur .5s cubic-bezier(.6,.2,.4,.8);
+       -o-animation: fade_in_blur .5s cubic-bezier(.6,.2,.4,.8);
+          animation: fade_in_blur .5s cubic-bezier(.6,.2,.4,.8);
+}
+@-webkit-keyframes fade_in_blur { from { opacity: 0; } to { opacity: 1; }  }
+   @-moz-keyframes fade_in_blur { from { opacity: 0; } to { opacity: 1; }  }
+     @-o-keyframes fade_in_blur { from { opacity: 0; } to { opacity: 1; }  }
+        @keyframes fade_in_blur { from { opacity: 0; } to { opacity: 1; }  }
+.blurred {
+  background: rgba(255,255,255,.6);
+  -webkit-animation: fade_out_menu .5s cubic-bezier(.6,.2,.4,.8);
+     -moz-animation: fade_out_menu .5s cubic-bezier(.6,.2,.4,.8);
+       -o-animation: fade_out_menu .5s cubic-bezier(.6,.2,.4,.8);
+          animation: fade_out_menu .5s cubic-bezier(.6,.2,.4,.8);
+}
+@-webkit-keyframes fade_out_menu { from { background: rgba(255,255,255,.9); } to { background: rgba(255,255,255,.6); }  }
+   @-moz-keyframes fade_out_menu { from { background: rgba(255,255,255,.9); } to { background: rgba(255,255,255,.6); }  }
+     @-o-keyframes fade_out_menu { from { background: rgba(255,255,255,.9); } to { background: rgba(255,255,255,.6); }  }
+        @keyframes fade_out_menu { from { background: rgba(255,255,255,.9); } to { background: rgba(255,255,255,.6); }  }
+        
+.main-menu {
+  @extend %float-right;
+  margin-top: -15px;
+  li {
+    @extend %inline-block;
+    margin-left:33px;
+  }
+  a {
+    @extend %inline-block;
+    padding-bottom: 9px;
+  }
+  .selected {
+    border-bottom: 5px solid rgba(219,219,220,.8);
+    padding-bottom: 7px;
+  }
+}

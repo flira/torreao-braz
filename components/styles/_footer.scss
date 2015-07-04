@@ -1,0 +1,53 @@
+.body-footer {
+  @extend %full-width;
+  @extend %box-shadow;
+  background: #fff;
+  .encap {
+    padding-top: 27px;
+  }
+  .logo {
+    @extend %block;
+    @extend %sprite;
+    background-position: -150px 0;
+    height: 16px;
+    width: 38px;
+  }
+  .footer-logo {
+    @extend %inline-block;
+    @extend %vertical-top;
+    width:70px;
+  }
+}
+.footer-about {
+   @extend %inline-block;
+   @extend %vertical-top;
+   padding: 0 10px;
+}
+.colofon {
+  address,
+  .copyright {
+    @extend %semi-bold;
+  }
+}
+.site-map {
+  font-size: $size12;
+  margin-bottom: 25px;
+  li {
+    @extend %inline-block;
+    padding: 0 .5em;
+    border-left: 1px solid $type-color;
+    &:first-child {
+      padding-left: 0;
+      border-left: none;
+    }
+    a {
+      @extend %menu-anchor;
+    }
+  }
+}
+.colofon {
+  font-size: $size14;
+  address {
+    margin-bottom: .5em;
+  }
+}
